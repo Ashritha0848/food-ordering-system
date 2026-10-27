@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 Foodie</h1>
+        <p>Delicious food, delivered fresh!</p>
+        <button class="cart-button" onclick="scrollToCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <div id="food-menu" class="food-grid"></div>
+        </section>
+
+        <section id="cart-section" class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+
+            <div class="total">
+                Total: ₹<span id="total">0</span>
+            </div>
+
+            <h3>Choose Payment Method</h3>
+            <select id="payment-method">
+                <option value="upi">UPI</option>
+                <option value="card">Credit / Debit Card</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+
+            <button id="place-order" class="order-button">
+                Place Order
+            </button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Foodie © 2026 | Design Patterns Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
